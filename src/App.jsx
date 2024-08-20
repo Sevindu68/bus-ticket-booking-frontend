@@ -7,6 +7,7 @@ import SearchResult from "./components/SearchResult";
 import BusLayOut from "./layout/BusLayOut";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import AdminPage from "./pages/AdminPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/bus" element={<BusLayOut />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/admin" element={<AdminPage />} />
         </Routes>
       </div>
     </>
