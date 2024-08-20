@@ -31,7 +31,7 @@ const NavBar = () => {
       )}
       {userRole === "Admin" && (
         <div className="mr-5 flex gap-5 justify-end w-[100%]">
-          <Link to="">
+          <Link to="/admin">
             <button className="bg-red-50 px-4 py-2">Admin Panel</button>
           </Link>
           <Link to="">
