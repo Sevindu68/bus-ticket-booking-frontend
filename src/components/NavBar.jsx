@@ -8,10 +8,11 @@ const NavBar = () => {
 
 
   console.log(userRole);
-  const logout = () => {
-    const response = axios.post("http://localhost:4000/logout");
+  const logout = async() => {
     setNewUser(null)
-    //console.log(userRole);
+    const response = await axios.post("http://localhost:4000/logout");
+    
+    console.log(response);
   };
   return (
     <nav className="flex bg-blue-300  px-7 py-5 items-center ">
